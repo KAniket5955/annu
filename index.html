@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+</head>
+
+<div class="centred">
+
+<form action="/submit" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+
+    <!-- <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required> -->
+    <br>
+
+    <!-- <button type="submit">Sign Up</button> -->
+     <input type="submit" value="submit">
+</form> 
+<a href="/get_data"><button>View Data</button></a>
+
+</div>
+
+<body>
+    <p>Hi, Welcome to the sign up page</p>
+    <p> Today is a {{ day_of_week }} </p>
+    <p> The time is {{ current_time }}</p>
+</body>
+<style>
+    body
+    {
+        background-color: aqua;
+    }    
+    p{
+        text-align: center;
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+        color: brown;
+    }
+</style>
+</html>
